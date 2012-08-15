@@ -1,4 +1,5 @@
-== Presentation
+Presentation
+============
 
 This repository contains different assignments done for fun or job interview. It should show my coding style.
 
