@@ -1,7 +1,0 @@
---- 
-open_files: 
-  - README
-  - cron_info_cli.rb
-  - cron_task.rb
-  - tc_cron_info.rb
-  - input
