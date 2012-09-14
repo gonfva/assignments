@@ -1,0 +1,30 @@
+This folder contains my solution to an assignment for a job selection process. 
+
+The assignment asks to build a tool that receives via command line the current time 
+and via standard input a pseudo-cron configuration file.
+
+It prints on the standard output, the next firing time for each of the commands in the input
+
+To execute it, you can invoke with
+
+  ruby cron_info_cli.rb hh:mm
+
+(where hh:mm is the current time) 
+and then on the standard input you input as much lines as desired. The tool keeps reading
+until it doesn't understand a line (New line char is enough). Then prints the next firing time.
+
+An explicit execution could be
+
+  cat input|ruby cron_info_cli.rb 16:10
+  
+It feeds the example of the assignment to $stdin, and establish 16:10 as current time.
+
+There are also some automated tests, that can be executed with
+
+  ruby tc_cron_info.rb
+   
+I haven't formatted the tool as a script (#!/usr/bin/env ruby) for portability reasons.
+The tool has been tested on Ubuntu 12-04 (ruby 1.9.2). I haven't tested on OSX.
+
+2012-08-21-Gonzalo Fernández-Victorio
+
